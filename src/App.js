@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import ResponsiveAppBar from './appbar'; 
+import MyPage from './backgroundcolor';
+import Grid from './grid';
+import TextRating from './rating';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    <ResponsiveAppBar/>
+    <Grid/>
+    <MyPage/>
+    <TextRating/>
+    
+
+   </div>
   );
 }
-
 export default App;
